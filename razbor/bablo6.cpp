@@ -7,7 +7,7 @@ do{
     while (A[i]<B[j]&&i<n)
     {
       C[k++]=A[i];
-      i++;
+	  i++;
     }
     while (A[i]>B[j]&&j<n)
     {
