@@ -21,20 +21,20 @@ int main()
 {
     int n, m;
     srand(time(0));
-    n = rand() % 100 + 10;
-    m = rand() % 100 + 10;
+    n = rand() % 20 + 10;
+    m = rand() % 20 + 10;
     int* arr_1 = (int*)malloc(n*sizeof(int));
     int* arr_2 = (int*)malloc(m*sizeof(int));
     cout << "First array (size = " << n << " ): " << endl;
     for (int i = 0; i < n; i++)
     {
-        *(arr_1+i) = rand() % 201 - 100;
+        *(arr_1+i) = rand() % 20 - 10;
         cout << *(arr_1 + i) << " ";
     }
     cout <<endl<<"Second array (size = " << n << " ): " << endl;
     for (int i = 0; i < n; i++)
     {
-        *(arr_2 + i) = rand() % 201 - 100;
+        *(arr_2 + i) = rand() % 20 - 10;
         cout << *(arr_2 + i) << " ";
     }
     cout << endl;
