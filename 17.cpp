@@ -7,7 +7,7 @@ int sort ( x,int n,int parm)
 		for(int k=1; k<n; k++)
 			for(int i=0; i<n-k; i++)
 			{
-				if (*(x+i)>*(x+i+1)
+				if (*(x+i)>*(x+i+1))
 						{
 							a=*(x+i);
 							*(x+i)=*(x+i+1);
@@ -21,7 +21,7 @@ int sort ( x,int n,int parm)
 		for(int k=1; k<n; k++)
 		for(int i=0; i<n-k; i++)
 		{
-		if(*(x+i)<*(x+i+1)
+		if(*(x+i)<*(x+i+1))
 				{
 					a=*(x+i);
 					*(x+i)=*(x+i+1);
@@ -40,12 +40,12 @@ int main()
 	  std::cin >> *(x+i);
 	 //----------- вывод на экран исходного массива
 	  std::cout << "\n massiv х[n] \n";
-	  for (int i << 0; i < n; i++) 
-	  std::cout << *(x+i) << " "; 
+	  for (int i << 0; i < n; i++)
+	  std::cout << *(x+i) << " ";
 	 //------------- сортировка
 	 sort(*x, n, parm);
 	  std::cout << "\n Result sortirovki massiva " << std::endl;
-	 for (int i=0; i< n; i++) 
+	 for (int i=0; i< n; i++)
 	 std::cout << *(x+i) << " ";
 	 std::cin >>i;
 	 return 0;
