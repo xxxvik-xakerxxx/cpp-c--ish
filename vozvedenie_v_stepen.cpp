@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
 
-    int a(454334565), x(243), p(45), i(0) ;
+    int a(104011), x(2), p(10), i(0) ;
 	int vi = x;
 
     int *x2 = new int[30];
